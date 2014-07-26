@@ -7,11 +7,15 @@
 -----------------------
 
 Subject
+
 	ID of the person being measured
+
 		1 .. 30
 
 Activity
+
 	Activity performed by the subject
+	
 		"LAYING"
 		"SITTING"
 		"STANDING"
@@ -20,9 +24,12 @@ Activity
 		"WALKING_UPSTAIRS"
 
 tBodyAcc-mean-X_average
+
 	Average of the feature "tBodyAcc-mean-X" for each subject and each activity.
+	
 		See values of "tBodyAcc-mean-X" in the Features section below.
 	
+
 tBodyAcc-mean-Y_average
 	Average of the feature "tBodyAcc-mean-Y" for each subject and each activity.
 		See values of "tBodyAcc-mean-Y" in the Features section below.
@@ -282,7 +289,7 @@ fBodyBodyGyroJerkMag-mean_average
 fBodyBodyGyroJerkMag-std_average"
 	Average of the feature "fBodyBodyGyroJerkMag-std" for each subject and each activity.
 		See values of "fBodyBodyGyroJerkMag-std" in the Features section below.
-	
+
 
 
 
@@ -328,15 +335,20 @@ These signals were used to estimate variables of the feature vector for each pat
 	fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
+	
 	mean(): Mean value
 	std(): Standard deviation
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+	
 	gravityMean
 	tBodyAccMean
 	tBodyAccJerkMean
 	tBodyGyroMean
 	tBodyGyroJerkMean
+
+All features are normalized and bounded within [-1,1].
+
 
 
 
@@ -345,13 +357,21 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 --------------------------------------
 
 1) Only the measurements on the mean and standard deviation have been extracted form the initial data sets.
+
 2) The data in subject_train.txt and y_train.txt have been added to the data in X_train.txt as two new columns.
+
 3) The data in subject_test.txt and y_test.txt have been added to the data in X_test.txt as two new columns.
+
 4) The training and the test sets have been merged into one data set.
+
 5) The resulting data set has been labeled with the labels "Subject", "Activity", 
    and the corresponding feature names in features.txt, removing the characters "()".
+   
 6) Activity numbers have been replaced by descriptive activity names ("LAYING", "WALKING", etc.).
+
 7) A second data set with the average of each variable for each activity and each subject has been created.
+
 8) The string "_average" has been added at the end of each feature label in this new data set.
+
 9) This data set has been written into a file called "tidy_data_set.csv" inside the "UCI HAR Dataset" folder.
 
