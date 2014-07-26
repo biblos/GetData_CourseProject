@@ -59,4 +59,4 @@ names(avg_data_set)[numeric_cols_ads] <- unlist(lapply(names(avg_data_set)[numer
 avg_data_set <- avg_data_set[order(avg_data_set$Subject),]
 
 # Write tidy data set in a file.
-write.csv(avg_data_set, file="UCI HAR Dataset/tidy_data_set.csv", row.names=FALSE) 
+write.csv(avg_data_set, file="UCI HAR Dataset/tidy_data_set.txt", row.names=FALSE) 

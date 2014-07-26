@@ -435,5 +435,5 @@ All features are normalized and bounded within [-1,1].
 
 8) The string "_average" has been added at the end of each feature label in this new data set.
 
-9) This data set has been written into a file called "tidy_data_set.csv" inside the "UCI HAR Dataset" folder.
+9) This data set has been written into a file called "tidy_data_set.txt" inside the "UCI HAR Dataset" folder.
 
